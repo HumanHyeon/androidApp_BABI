@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_slider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:background="@drawable/shadow"
+    android:layout_marginLeft="@dimen/pageMargin"
+    android:layout_marginRight="@dimen/pageMargin"
+    android:contentDescription="@string/app_name" />
