@@ -8,6 +8,16 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background5"
+        android:scaleType="fitXY"/>
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp_image_slider"
         android:layout_width="match_parent"
@@ -17,17 +27,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/layoutIndicators"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@id/vp_image_slider"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/kkobak2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/kkobak1"
+        android:rotation="30"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
